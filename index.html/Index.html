@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bravo's Cutting Services | Apparel Development & Precision Cutting</title>
+    <style>
+        :root {
+            --dark: #121212;
+            --gold: #c5a059;
+            --gray: #f8f9fa;
+            --border: #e2e8f0;
+            --whatsapp: #25d366;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--dark); line-height: 1.6; }
+        
+        header { background: var(--dark); color: #fff; padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: 1px; }
+        .logo span { color: var(--gold); }
+        nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
+        
+        .btn { background: var(--gold); color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.3s; }
+        .btn:hover { background: #b08d48; }
+
+        .hero { background: var(--gray); padding: 5rem 5%; text-align: center; border-bottom: 1px solid var(--border); }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: var(--dark); }
+        .hero p { font-size: 1.2rem; color: #555; max-width: 750px; margin: 0 auto 2rem; }
+
+        .services { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 3rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .card { border: 1px solid var(--border); padding: 2.5rem; border-radius: 8px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .card h3 { color: var(--dark); margin-bottom: 1rem; font-size: 1.3rem; }
+        .card ul { margin-top: 1rem; padding-left: 1.2rem; font-size: 0.95rem; color: #444; }
+        .card li { margin-bottom: 0.5rem; }
+
+        /* Sección de Galería de Trabajos Recientes */
+        .portfolio-section { padding: 5rem 5%; background: #fff; border-top: 1px solid var(--border); }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .portfolio-item { width: 100%; height: 250px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border); }
+
+        .form-section { background: var(--gray); padding: 5rem 5%; border-top: 1px solid var(--border); }
+        .form-container { max-width: 700px; margin: 0 auto; background: #fff; padding: 2.5rem; border-radius: 8px; border: 1px solid var(--border); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem; }
+        .form-group input[type="file"] { padding: 0.5rem; background: var(--gray); }
+
+        /* Botón Flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--whatsapp);
+            color: #fff;
+            border-radius: 50px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            z-index: 1001;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+            background-color: #20ba5a;
+        }
+
+        .whatsapp-icon { width: 24px; height: 24px; fill: currentColor; }
+        
+        footer { background: var(--dark); color: #888; text-align: center; padding: 2rem 5%; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">BRAVO'S <span>CUTTING SERVICES</span></div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Our Work</a>
+            <a href="#quote">Get a Quote</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Precision Cutting & Apparel Development</h1>
+        <p>Bringing your fashion vision to life. From pattern making and sample development to bulk industrial cutting and custom bespoke tailoring.</p>
+        <a href="#quote" class="btn">Request a Quote</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Our Core Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Digital & Manual Pattern Drafting</h3>
+                <p><strong>Ideal for:</strong> Fashion Designers, Boutiques & Custom Apparel</p>
+                <ul>
+                    <li>Digital CAD pattern drafting & Manual drape drafting</li>
+                    <li>Precision size grading & Digitizing</li>
+                    <li>Tech pack creation & Prototype development</li>
+                    <li>Fabric yield optimization</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>2. Industrial Cutting Services</h3>
+                <p><strong>Ideal for:</strong> Boutiques, Apparel Brands & Corporate Production</p>
+                <ul>
+                    <li>High-precision manual and automatic cutting</li>
+                    <li>Tissue & fabric spreading</li>
+                    <li>Optimal marker layout (zero waste focus)</li>
+                    <li>Strict quality control on grainlines</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>3. Custom & Bespoke Tailoring</h3>
+                <p><strong>Ideal for:</strong> Individuals & High-Fashion Clients</p>
+                <ul>
+                    <li>Custom pattern creation to exact measurements</li>
+                    <li>Personalized fitting sessions</li>
+                    <li>Luxury garment construction</li>
+                    <li>Complex alterations & fine adjustments</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+        <h2 class="section-title">Recent Work & Facility</h2>
+        <div class="portfolio-grid">
+            <img src="https://via.placeholder.com/400x300?text=Pattern+Drafting" alt="Pattern Drafting" class="portfolio-item">
+            <img src="https://via.placeholder.com/400x300?text=Fabric+Cutting" alt="Fabric Cutting" class="portfolio-item">
+            <img src="https://via.placeholder.com/400x300?text=Sample+Making" alt="Sample Making" class="portfolio-item">
+            <img src="https://via.placeholder.com/400x300?text=Bespoke+Fitting" alt="Bespoke Fitting" class="portfolio-item">
+        </div>
+    </section>
+
+    <section class="form-section" id="quote">
+        <div class="form-container">
+            <h2 style="margin-bottom: 0.5rem; text-align: center;">Let's Build Your Collection</h2>
+            <p style="margin-bottom: 2rem; text-align: center; color: #666;">Fill out the form below to receive a project estimate.</p>
+            
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Full Name / Business Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Jane Doe / Studio Apparel">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="name@company.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Required *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a Service...</option>
+                        <option value="pattern">Digital & Manual Pattern Drafting</option>
+                        <option value="cutting">Industrial Cutting Services</option>
+                        <option value="bespoke">Custom & Bespoke Tailoring</option>
+                        <option value="full">Full Package (Development + Cutting)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Project Details (Fabric Type, Units, Deadline) *</label>
+                    <textarea id="details" name="details" rows="4" required placeholder="Describe your project, estimated quantities, and required delivery dates..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="file">Upload Tech Pack / Pattern (PDF, DXF, ZIP)</label>
+                    <input type="file" id="file" name="file" accept=".pdf,.dxf,.zip,.png,.jpg">
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <a href="https://wa.me/12133020061?text=Hello%20Bravo's%20Cutting%20Services,%20I'd%20like%20to%20inquire%20about%20your%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        Chat on WhatsApp
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Bravo's Cutting Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

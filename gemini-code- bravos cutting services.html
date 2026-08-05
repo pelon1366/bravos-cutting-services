@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bravo's Cutting Services | Apparel Development & Precision Cutting</title>
+    <style>
+        :root {
+            --dark: #121212;
+            --gold: #c5a059;
+            --gray: #f8f9fa;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--dark); line-height: 1.6; }
+        
+        header { background: var(--dark); color: #fff; padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: 1px; }
+        .logo span { color: var(--gold); }
+        nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
+        
+        .btn { background: var(--gold); color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.3s; }
+        .btn:hover { background: #b08d48; }
+
+        .hero { background: var(--gray); padding: 5rem 5%; text-align: center; border-bottom: 1px solid var(--border); }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: var(--dark); }
+        .hero p { font-size: 1.2rem; color: #555; max-width: 750px; margin: 0 auto 2rem; }
+
+        .services { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 3rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .card { border: 1px solid var(--border); padding: 2.5rem; border-radius: 8px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .card h3 { color: var(--dark); margin-bottom: 1rem; font-size: 1.3rem; }
+        .card ul { margin-top: 1rem; padding-left: 1.2rem; font-size: 0.95rem; color: #444; }
+        .card li { margin-bottom: 0.5rem; }
+
+        .form-section { background: var(--gray); padding: 5rem 5%; border-top: 1px solid var(--border); }
+        .form-container { max-width: 700px; margin: 0 auto; background: #fff; padding: 2.5rem; border-radius: 8px; border: 1px solid var(--border); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem; }
+        .form-group input[type="file"] { padding: 0.5rem; background: var(--gray); }
+        
+        footer { background: var(--dark); color: #888; text-align: center; padding: 2rem 5%; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">BRAVO'S <span>CUTTING SERVICES</span></div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#quote">Get a Quote</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Precision Cutting & Apparel Development</h1>
+        <p>Bringing your fashion vision to life. From pattern making and sample development to bulk industrial cutting and custom bespoke tailoring.</p>
+        <a href="#quote" class="btn">Request a Quote</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Our Core Services</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <h3>1. Digital & Manual Pattern Drafting</h3>
+                <p><strong>Ideal for:</strong> Fashion Designers, Boutiques & Custom Apparel</p>
+                <ul>
+                    <li>Digital CAD pattern drafting & Manual drape drafting</li>
+                    <li>Precision size grading & Digitizing</li>
+                    <li>Tech pack creation & Prototype development</li>
+                    <li>Fabric yield optimization</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>2. Industrial Cutting Services</h3>
+                <p><strong>Ideal for:</strong> Boutiques, Apparel Brands & Corporate Production</p>
+                <ul>
+                    <li>High-precision manual and automatic cutting</li>
+                    <li>Tissue & fabric spreading</li>
+                    <li>Optimal marker layout (zero waste focus)</li>
+                    <li>Strict quality control on grainlines</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>3. Custom & Bespoke Tailoring</h3>
+                <p><strong>Ideal for:</strong> Individuals & High-Fashion Clients</p>
+                <ul>
+                    <li>Custom pattern creation to exact measurements</li>
+                    <li>Personalized fitting sessions</li>
+                    <li>Luxury garment construction</li>
+                    <li>Complex alterations & fine adjustments</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="form-section" id="quote">
+        <div class="form-container">
+            <h2 style="margin-bottom: 0.5rem; text-align: center;">Let's Build Your Collection</h2>
+            <p style="margin-bottom: 2rem; text-align: center; color: #666;">Fill out the form below to receive a project estimate.</p>
+            
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Full Name / Business Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Jane Doe / Studio Apparel">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="name@company.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Required *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a Service...</option>
+                        <option value="pattern">Digital & Manual Pattern Drafting</option>
+                        <option value="cutting">Industrial Cutting Services</option>
+                        <option value="bespoke">Custom & Bespoke Tailoring</option>
+                        <option value="full">Full Package (Development + Cutting)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Project Details (Fabric Type, Units, Deadline) *</label>
+                    <textarea id="details" name="details" rows="4" required placeholder="Describe your project, estimated quantities, and required delivery dates..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="file">Upload Tech Pack / Pattern (PDF, DXF, ZIP)</label>
+                    <input type="file" id="file" name="file" accept=".pdf,.dxf,.zip,.png,.jpg">
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bravo's Cutting Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
